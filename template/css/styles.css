@@ -1,0 +1,52 @@
+header {
+    color: #FF0000;
+}
+
+header p {
+    font-size: 4em;
+    font-family: 'Cormorant Garamond', serif; 
+
+}
+
+body {
+    background-color: #fff; 
+    color: black; 
+    
+}
+
+main {
+    min-height: 400px;
+    background-color: #ffffff; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 95%;
+}
+
+
+h1 {
+     color: #FF0000; 
+     background-color: 	#FFF; 
+     font-family: Cinzel, Arial, serif; 
+     padding: 5px; 
+     padding-left: 10px; 
+}
+ 
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: .70em; 
+    font-style: italic; 
+    padding-top: 100px; 
+    padding-bottom: 10px; 
+    text-align: center; 
+}
+
+img {
+    display: block;
+    height: auto;
+    width: 100%;   
+}
+
