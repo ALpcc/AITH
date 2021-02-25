@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
     
@@ -34,18 +35,10 @@
     
     <body>
         
-    <header><p>Ace In The Hole</p></header>
-    <!--<?php include 'includes/header.inc.html.php'; ?>-->
     
-    <nav>
-        <ul class="menu">
-            <li class="item"><a href="#">Home</a></li>
-            <li class="item"><a href="#">Event Details</a></li>
-            <li class="item"><a href="#">Register</a></li>
-            <li class="item"><a href="#">Contact</a></li>
-            <li class="toggle"><a href="#"><span class="bars"></span></a></li>
-        </ul>
-    </nav>
+    <?php include 'includes/header.inc.html.php'; ?>
+    
+        <?php include 'includes/nav.inc.html.php'; ?>
         
     <main>
         

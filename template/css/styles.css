@@ -50,3 +50,58 @@ img {
     width: 100%;   
 }
 
+select {
+     display: block; 
+     margin-bottom: 2em; 
+}
+
+table {
+     border: 2px solid #ffffff; 
+     margin: auto; 
+     padding-bottom: 50px; 
+     width: 600px; 
+}
+
+td {
+     background-color: #ffffff; 
+     border: 1px solid #0b344d; 
+     color: #363636; 
+     font-weight: bold; 
+     font-family: Cinzel, Arial, serif; 
+     font-size: .95em; 
+     padding: .5em; 
+     text-align: center; 
+}
+
+th {
+     background-color: #0b344d; 
+     color: #ffffff; 
+     font-size: 1.15em; 
+     font-weight: bold; 
+     font-family: Cinzel, Arial, serif; 
+     padding: .5em; 
+     text-align: center; 
+}
+
+input, textarea {
+     display: block; 
+     margin-bottom: 2em; 
+}
+
+label {
+     clear: left; 
+     float: left; 
+     font-size: .75em; 
+     margin-bottom: 1em; 
+     padding-right: 10px; 
+     text-align: right; 
+     width: 150px; 
+}
+
+form {
+     background-image: url(images/); 
+     background-color: #ffffff; 
+     font-family: Cinzel, Arial, serif; 
+     padding: 10px; 
+     padding-top: 35px; 
+}
