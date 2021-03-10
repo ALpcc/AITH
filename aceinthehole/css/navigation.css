@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    background: #FF0000;
+    border-color: black;
+    border-width: medium;  
+}
+
+ul {
+   list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.menu li {
+    font-size: 16px;
+    padding: 15px 5px;
+}
+
+.menu li a {
+    display: block;
+}
+
+li.item {
+    border-bottom: thin solid;
+    border-color: black;
+}
+
+li.item.top{
+    border-top: thin solid;
+    border-color: black;
+}
+
+li.toggle {
+    display: block;
+    margin: .5em;
+}
+
+/*Mobile Menu*/
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+}
+
+.toggle {
+    order: 1;
+}
+
+.item {
+    width: 100%;
+    text-align: center;
+    order: 2;
+    display: none;
+}
+
+.item.active{
+    display: block;
+}
+
+.bars {
+    background: white;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+
+.bars::before, .bars::after {
+    background: white;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 2px;
+    width: 18px;
+}
+
+.bars::before {
+    top: 5px;
+}
+
+.bars::after {
+    top: -5px;
+}
+
+/* Tablet menu */
+@media all and (min-width:468px){
+    .menu {
+        justify-content: center;
+    }
+    header {
+        margin: 0;
+        padding: 0;
+    }
+    .item {
+        display: block;
+        width: auto;
+    }
+    
+    .toggle {
+        display: none;
+    
+    } 
+    
+    li.item {    
+        border-bottom: none;
+        border-color: none;
+    }
+    
+    li.item.top{
+        border-top: none;
+        border-color: none;
+    }
+    
+    li.toggle {
+        display: none;
+    }
+    
+}
+
+@media all and (min-width: 768px) {
+    .item {
+        display: block;
+        width: auto;
+    }
+    
+    .item {
+        order: 1;
+    }
+    .menu {
+        height: 4em;
+   
+    }
+    .menu li {
+        padding: 15px 10px;    
+    }
+    .menu a {
+        font-size: 2em;
+    }
+    
+    header h1 {
+        font-size: 4em;
+    }
+    
+    nav {
+        border-style: none;
+    }
+    
+    li.item {
+    border-bottom: none;
+    border-color: none;
+    }
+    
+    li.item.top{
+    border-top: none;
+    border-color: none;
+    }
+    
+    li.toggle {
+        display: none;
+    }
+    
+}

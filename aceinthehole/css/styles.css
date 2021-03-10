@@ -1,0 +1,296 @@
+header {
+    color: #FF0000;
+    background-color: red;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-family: 'Cormorant Garamond', serif; 
+    color: white;
+    padding: .5em .5em; 
+    text-shadow: 0 0 2px black;
+}
+
+h1.mainH1 {
+    display: block;
+    color: #FF0000;
+    font-size: 1.75em;
+    font-family: Cinzel, Arial, serif; 
+    background-color: #FFF; 
+    margin: 1em; 
+    line-height: 1.5em;
+    text-align: left; 
+    margin: 1em;
+}
+
+h2.mainH2{
+    display: block;
+    color: #000;
+    font-size: 1em;
+    font-family: Cinzel, Arial, serif; 
+    background-color: #FFF; 
+    margin-top: 1.2em;
+    margin-bottom: 5px;
+    margin-left: 1em;
+    margin-right: 1em;
+    line-height: 1.5em;
+    text-align: left; 
+}
+ 
+body {
+    background-color: #fff; 
+    color: black; 
+    font-family: Cinzel, Arial, serif;  
+}
+
+body p {
+    display: block;
+    font-size: 1.1em;
+    
+    margin: 24px;
+    line-height: 1.5em;
+}
+
+main {
+    min-height: 600px;
+    background-color: #ffffff; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 100%;
+}
+ 
+footer {
+    background-color: black;
+    color: white;
+    font-size: .70em; 
+    font-style: italic; 
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+    padding: 1.5em;
+    margin: 0;
+}
+
+.weathercontainer{
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    display: block;
+    height: auto;
+    width: 100%;   
+}
+
+select {
+     display: block; 
+     margin-bottom: 2em; 
+}
+
+table {
+     border: 2px solid #ffffff; 
+     margin: auto; 
+     padding-bottom: 50px; 
+}
+
+td {
+     background-color: #ffffff; 
+     border: 1px solid #0b344d; 
+     color: #363636; 
+     font-weight: bold; 
+     font-family: Cinzel, Arial, serif; 
+     font-size: .95em; 
+     padding: .5em; 
+     text-align: center; 
+}
+
+th {
+     background-color: #0b344d; 
+     color: #ffffff; 
+     font-size: 1.15em; 
+     font-weight: bold; 
+     font-family: Cinzel, Arial, serif; 
+     padding: .5em; 
+     text-align: center; 
+}
+
+#form { 
+    background-color: #ffffff; 
+    font-family: Cinzel, Arial, serif;
+}
+
+label{
+    display: inline-block;
+    width: 150px;
+    font-size: .75em; 
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+input,select {
+    margin-top: 0;
+    margin-bottom: 1em;
+    padding: 2px;  
+}
+
+textarea {
+    display: block;
+}
+
+#mySubmit {
+    display: block;
+    margin-top: 5px
+}
+
+.desktop{
+    display: none;
+}
+
+.grid-container {
+        display: grid;
+        grid-gap: 1px;
+        padding: 1em;
+    }
+
+.grid-container > div {
+        text-align: center;
+        padding: 20px 0;
+}
+
+h3 {
+        font-size: 20px;
+        margin: 1em 1em 0;
+    }
+
+.container ul {
+        display: block;
+        font-size: 1.1em;
+        font-family: Cinzel, Arial, serif;
+        line-height: 1.5em;
+        margin: 24px;
+        list-style: inherit
+} 
+.container li {
+    margin: 24px;    
+    }
+
+.logo {
+    display: flex;
+    
+}
+
+.logo img {
+    width: 40%;
+    margin-left: auto;
+    margin-right: 0;
+    padding: 5px 5px 0 0;
+}
+
+/* Tablet styling */
+@media all and (min-width:411px){
+    #form {
+       margin: 2em;
+       padding: 1em;
+    }
+    
+    label {
+        display: block;
+        width: 100px;
+        font-size: 1em; 
+    }
+    
+    #mySubmit{
+        display: block;
+    }  
+    
+    h3 {
+        font-size: 20px;
+        margin: 1em 1em 0;
+    }
+    /* columns */
+    
+    .grid-container {
+        grid-template-columns: auto auto auto auto;
+    }
+    
+    .item1 {
+        grid-column: 1 / span 2;
+    }
+    .item2 {
+        grid-column: 3 / span 2;
+    }
+    
+    .item3 {
+        grid-column: 5 / span 2;
+    }
+    
+    
+}
+
+
+/* Desktop */
+@media all and (min-width: 768px){
+    .desktop {
+        display: contents;
+    }
+    .mobile {
+        display: none;
+    }
+    
+    header {
+        color: #FFF;
+        padding: .5em;
+        border-bottom: none;
+    }
+    
+    header h1 {
+        font-size: 2.5em;
+        font-family: 'Cormorant Garamond', serif; 
+        background-color: #FFF;
+        color: #FF0000;
+    }
+    
+    main{
+        min-height: 800px;
+        
+    
+    }
+    .container {
+        padding: auto;
+        margin: auto;
+        width: 70%;      
+    }
+    .headerimage, img{
+        height: 700px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+    }
+    .mySlides {
+        display: none;
+        
+    }
+    
+    #form {
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+        border: solid thin black;
+    }
+    
+    img {
+        vertical-align: middle; 
+    }
+    
+    h1.mainH1 {
+        border-bottom: solid thin black;
+        margin-top: 2em;
+        font-size: 2.5rem;
+    }
+    
+}
