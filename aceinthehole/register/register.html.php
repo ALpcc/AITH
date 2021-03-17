@@ -50,10 +50,20 @@
             <li class="toggle"><a href="#"><span class="bars"></span></a></li>
         </ul>
             </nav>
+            <!-- wow! not so fancy slideshow -->
+            <div class="headerimage">
+                <img class="mySlides" src="../images/ace3.jpg">
+                <img class="mySlides" src="../images/ace5.jpg">
+                <img class="mySlides" src="../images/ace9.jpg">
+                <img class="mySlides" src="../images/ace14.jpg">
+                <img class="mySlides" src="../images/ace18.jpg">
+            </div>
         </div>
         
+        <!-- Display for Mobile view -->
         <div class="mobile">
-            <?php include '../includes/nav.inc.html.php'; ?>   
+            <?php include '../includes/nav.inc.html.php'; ?>
+            <img src="../images/ace3.jpg">
         </div>
     <div class="container">
     <main>
@@ -142,6 +152,22 @@
     
     
     <?php include '../includes/footer.inc.html.php'; ?>
+                    <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 5000); // Change image every 5 seconds
+            }
+        </script>
     
 </body>
 </html>

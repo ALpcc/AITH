@@ -57,8 +57,10 @@
             </div>
         </div>
         
+        <!-- Display for Mobile view -->
         <div class="mobile">
-            <?php include '../includes/nav.inc.html.php'; ?>  
+            <?php include '../includes/nav.inc.html.php'; ?>
+            <img src="../images/ace3.jpg">
         </div>
         <div class="container">
     <main>

@@ -33,6 +33,7 @@
     </head>
     
      <body>
+
         
         <!-- Display changes when in desktop view -->
         <div class="desktop">
@@ -61,12 +62,32 @@
         <div class="mobile">
             <?php include 'includes/nav.inc.html.php'; ?>
             <img src="images/ace3.jpg">
-        </div>
-    
+         </div>
+         
+         <div class="socialmediafeed grid-container">
+             
+         <div class="twitter item1">
+             <!-- twitter plugin code -->
+             <a class="twitter-timeline" data-width="400" data-height="250" href="https://twitter.com/pcccas222?ref_src=twsrc%5Etfw">Tweets by pcccas222</a> 
+         </div>
+         <!-- facebook plugin code -->
+         
+         <div class="facebook item2">
+         
+             <div class="fb-page" data-href="https://www.facebook.com/Cas222Aceinthehole-110661963841617/" data-tabs="timeline" data-width="400" data-height="250" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+             
+                 <blockquote cite="https://www.facebook.com/Cas222Aceinthehole-110661963841617/" class="fb-xfbml-parse-ignore">
+                 
+                     <a href="https://www.facebook.com/Cas222Aceinthehole-110661963841617/">Cas222Aceinthehole</a>
+             
+                 </blockquote>           
+             </div>
+             </div>
+             </div>
         <!-- the start of content -->
          <div class="container">
              <main>
-                
+                 
                  <h1 class="mainH1">ABOUT ACE IN THE HOLE MULTISPORT EVENTS</h1>
                  
                  <p>Ace in the Hole Multisport Events is proud to offer running and triathlon events to athletes of all shapes and sizes, national origins, gender identifications and cultural backgrounds. We offer Events for Every Body.</p>
@@ -93,9 +114,7 @@
         
              </main>
          </div>
-  
-    
-    
+
     
     
         <!-- footer plus other end page goodies -->
@@ -117,6 +136,12 @@
                 setTimeout(carousel, 5000); // Change image every 5 seconds
             }
         </script>
+         <!-- twitter script -->
+         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+         <!-- facebook plugin script -->
+         <div id="fb-root"></div>
+
+         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="3SJJc8JY"></script>
     
     </body>
 </html>
